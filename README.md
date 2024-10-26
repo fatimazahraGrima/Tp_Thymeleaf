@@ -27,7 +27,7 @@ Ce projet est une application web CRUD simple construite avec Spring Boot et Thy
 
 ## Installation
 
-1. **Cloner le dépôt :**
+1. **Pom.xml :**
 
     ```bash
     git clone https://github.com/votre-utilisateur/votre-projet.git
@@ -38,15 +38,7 @@ Ce projet est une application web CRUD simple construite avec Spring Boot et Thy
     - Créez une base de données nommée `thymeleaf` dans MySQL.
     - Mettez à jour le fichier `src/main/resources/application.properties` avec vos informations de connexion MySQL.
 
-    ```properties
-    server.port=8080
-    spring.datasource.url=jdbc:mysql://localhost:3306/thymeleaf?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    spring.datasource.username=VOTRE_UTILISATEUR
-    spring.datasource.password=VOTRE_MOT_DE_PASSE
-
-    spring.jpa.show-sql=true
-    spring.jpa.hibernate.ddl-auto=update
-    ```
+![image](https://github.com/user-attachments/assets/590c9f49-d707-4a23-90d2-3a456713733b)
 
 3. **Exécuter l'application :**
 
@@ -64,12 +56,29 @@ Ce projet est une application web CRUD simple construite avec Spring Boot et Thy
 ## Structure du Projet
 
 - **`User`** : classe entité représentant un utilisateur, avec des attributs `id`, `name`, et `email`.
+
+  ![image](https://github.com/user-attachments/assets/c0506346-e9b7-4044-bd71-4eefec643fda)
+
 - **`UserRepository`** : interface étendant `CrudRepository` pour fournir des fonctionnalités CRUD sur `User`.
+
+  ![image](https://github.com/user-attachments/assets/debd9fbe-3e82-432c-b5e2-e95c03ddb488)
+
 - **`UserController`** : contrôleur qui gère les requêtes HTTP pour les opérations CRUD et interagit avec le `UserRepository`.
+
+![image](https://github.com/user-attachments/assets/aa060c6b-15f9-4ea9-a64d-128ca6f33e7b) ![image](https://github.com/user-attachments/assets/8dc4c183-49b5-4f5a-b016-36b9001ececc) ![image](https://github.com/user-attachments/assets/1ea61a1e-5533-4526-95a0-d07eb5a6eff6)
+
+
+
 - **Templates Thymeleaf** :
   - `add-user.html` : formulaire pour ajouter un nouvel utilisateur.
+![image](https://github.com/user-attachments/assets/f76b2547-f525-4d5a-ae1c-cff0d9173cc5)
+
   - `update-user.html` : formulaire pour mettre à jour les informations d'un utilisateur existant.
+![image](https://github.com/user-attachments/assets/199cb3b5-35cd-4523-8728-23fba8c0b351)
+
   - `index.html` : vue principale pour afficher la liste des utilisateurs et leurs actions.
+![image](https://github.com/user-attachments/assets/3c9c50db-d3f7-4d8c-ac24-59035a5b1d95)
+
 
 ## Utilisation
 
